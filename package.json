@@ -4,7 +4,8 @@
   "description": "Repository for the main site over at johanrytterfelt.com",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack-cli serve --config ./webpack.config.js",
+    "build": "webpack --mode=development",
+    "serve": "webpack-cli serve --config ./webpack.config.js --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
