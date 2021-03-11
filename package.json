@@ -4,6 +4,7 @@
   "description": "Repository for the main site over at johanrytterfelt.com",
   "main": "index.js",
   "scripts": {
+    "serve": "webpack-cli serve --config ./webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +29,7 @@
     "ts-loader": "^8.0.18",
     "typescript": "^4.2.3",
     "webpack": "^5.24.4",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
