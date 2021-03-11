@@ -1,0 +1,19 @@
+{
+  "name": "johanrytterfelt.com",
+  "version": "0.1.0",
+  "description": "Repository for the main site over at johanrytterfelt.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohanRytterfelt/johanrytterfelt.com.git"
+  },
+  "author": "Johan Rytterfelt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohanRytterfelt/johanrytterfelt.com/issues"
+  },
+  "homepage": "https://github.com/JohanRytterfelt/johanrytterfelt.com#readme"
+}
