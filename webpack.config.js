@@ -34,6 +34,15 @@ module.exports =
 				loader : 'ts-loader',
 				test   : /\.tsx?$/,
 			},
+			{
+				test: /\.p?css$/i,
+				use :
+				[
+					'style-loader',
+					'css-loader',
+					'postcss-loader',
+				],
+			},
 		],
 	},
 	output:

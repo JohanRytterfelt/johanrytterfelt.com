@@ -8,6 +8,7 @@
  * Imports.
  */
 import React, { FC } from 'react';
+import './App.pcss';
 
 
 

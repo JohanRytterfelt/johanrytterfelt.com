@@ -4,7 +4,7 @@
   "description": "Repository for the main site over at johanrytterfelt.com",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode=development",
+    "build": "webpack --mode=production",
     "serve": "webpack-cli serve --config ./webpack.config.js --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,7 +26,16 @@
     "react-router": "^5.2.0"
   },
   "devDependencies": {
+    "css-loader": "^5.1.2",
     "html-webpack-plugin": "^5.3.1",
+    "postcss": "^8.2.8",
+    "postcss-loader": "^5.2.0",
+    "postcss-nested": "^5.0.5",
+    "postcss-nested-ancestors": "^2.0.0",
+    "postcss-nested-props": "^2.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-property-lookup": "^2.0.0",
+    "style-loader": "^2.0.0",
     "ts-loader": "^8.0.18",
     "typescript": "^4.2.3",
     "webpack": "^5.24.4",
