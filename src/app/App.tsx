@@ -7,8 +7,21 @@
 /**
  * Imports.
  */
+import BemHelper     from 'react-bem-helper';
 import React, { FC } from 'react';
 import './App.pcss';
+
+
+
+/**
+ * Constants.
+ */
+const bemHelper: BemHelper<string> = new BemHelper(
+	{
+		name          : 'app',
+		outputIsString: true,
+	}
+);
 
 
 
@@ -18,7 +31,7 @@ import './App.pcss';
 const App: FC = () =>
 {
 	return (
-		<div>
+		<div className={ bemHelper() }>
 			{ 'My name is App, nice to meet you!' }
 		</div>
 	);
