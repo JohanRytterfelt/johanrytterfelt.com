@@ -7,8 +7,14 @@
 /**
  * Imports.
  */
-import { FC }    from 'react';
-import BemHelper from 'react-bem-helper';
+import { About }      from 'about/about';
+import { Experience } from 'experience/experience';
+import { FC }         from 'react';
+import { Footer }     from 'footer/footer';
+import { Hero }       from 'hero/hero';
+import { Portfolio }  from 'portfolio/portfolio';
+import { Skills }     from 'skills/skills';
+import BemHelper      from 'react-bem-helper';
 import './app.pcss';
 
 
@@ -32,7 +38,12 @@ export const App: FC = () =>
 {
 	return (
 		<div className={ bemHelper() }>
-			{ 'My name is App, nice to meet you!' }
+			<Hero />
+			<About />
+			<Skills />
+			<Experience />
+			<Portfolio />
+			<Footer />
 		</div>
 	);
 };
