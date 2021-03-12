@@ -7,10 +7,11 @@
 /**
  * Imports.
  */
-const EsLintPlugin      = require( 'eslint-webpack-plugin' );
-const HtmlWebPackPlugin = require( 'html-webpack-plugin' );
-const path              = require( 'path' );
-const StyleLintPlugin   = require( 'stylelint-webpack-plugin' );
+const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
+const EsLintPlugin           = require( 'eslint-webpack-plugin' );
+const HtmlWebPackPlugin      = require( 'html-webpack-plugin' );
+const path                   = require( 'path' );
+const StyleLintPlugin        = require( 'stylelint-webpack-plugin' );
 
 
 
@@ -76,6 +77,7 @@ module.exports =
 				files: '**/*.pcss',
 			}
 		),
+		new CleanWebpackPlugin(),
 	],
 	resolve:
 	{
