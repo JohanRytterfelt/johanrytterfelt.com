@@ -9,7 +9,7 @@
  */
 import BemHelper     from 'react-bem-helper';
 import React, { FC } from 'react';
-import './App.pcss';
+import './app.pcss';
 
 
 
@@ -28,7 +28,7 @@ const bemHelper: BemHelper<string> = new BemHelper(
 /**
  * React component.
  */
-const App: FC = () =>
+export const App: FC = () =>
 {
 	return (
 		<div className={ bemHelper() }>
@@ -36,5 +36,3 @@ const App: FC = () =>
 		</div>
 	);
 };
-
-export default App;
