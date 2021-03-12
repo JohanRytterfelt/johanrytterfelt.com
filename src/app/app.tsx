@@ -7,8 +7,8 @@
 /**
  * Imports.
  */
-import BemHelper     from 'react-bem-helper';
-import React, { FC } from 'react';
+import { FC }    from 'react';
+import BemHelper from 'react-bem-helper';
 import './app.pcss';
 
 
