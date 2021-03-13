@@ -2,5 +2,9 @@
 	"colors":
 	{
 		"primary": "#333"
+	},
+	"layout":
+	{
+		"genericDistance": "15px"
 	}
 }

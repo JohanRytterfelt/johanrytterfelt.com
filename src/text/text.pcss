@@ -1,0 +1,170 @@
+/**
+ * Styling for the text module.
+ *
+ * Our sizes are based on MD, so see: https://material.io/design/typography/the-type-system.html#type-scale for reference.
+ */
+
+
+
+/**
+ * Main BEM block.
+ */
+.text
+{
+	display: block;
+
+	&--body1
+	{
+		letter-spacing: 0.5px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 16 );
+			weight: 400;
+		}
+	}
+
+	&--body2
+	{
+		letter-spacing: 0.25px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 14 );
+			weight: 400;
+		}
+	}
+
+	&--button
+	{
+		letter-spacing: 1.25px;
+		text-transform: uppercase;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 14 );
+			weight: 500;
+		}
+	}
+
+	&--caption
+	{
+		letter-spacing: 0.4px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 12 );
+			weight: 400;
+		}
+	}
+
+	&--h1
+	{
+		letter-spacing: -1.5px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 96 );
+			weight: 300;
+		}
+	}
+
+	&--h2
+	{
+		letter-spacing: -0.5px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 60 );
+			weight: 300;
+		}
+	}
+
+	&--h3
+	{
+		letter-spacing: 0px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 48 );
+			weight: 400;
+		}
+	}
+
+	&--h4
+	{
+		letter-spacing: 0.25px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 34 );
+			weight: 400;
+		}
+	}
+
+	&--h5
+	{
+		letter-spacing: 0px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 24 );
+			weight: 400;
+		}
+	}
+
+	&--h6
+	{
+		letter-spacing: 0.15px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 20 );
+			weight: 500;
+		}
+	}
+
+	&--inline
+	{
+		display: inline;
+	}
+
+	&--margins
+	{
+		margin-bottom: var( --layoutGenericDistance );
+	}
+
+	&--overline
+	{
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 10 );
+			weight: 400;
+		}
+	}
+
+	&--subtitle1
+	{
+		letter-spacing: 0.15px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 16 );
+			weight: 400;
+		}
+	}
+
+	&--subtitle2
+	{
+		letter-spacing: 0.1px;
+
+		font:
+		{
+			size: convertTypographyUnitsToRem( 14 );
+			weight: 500;
+		}
+	}
+}
