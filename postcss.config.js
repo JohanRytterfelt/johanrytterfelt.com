@@ -62,6 +62,17 @@ module.exports =
 		{
 			variables: processVariables( variables ),
 		},
+		'postcss-functions':
+		{
+			functions:
+			{
+				convertTypographyUnitsToRem: ( value ) =>
+				{
+					// Since we base our typography system on MD we'll need to convert the specified size (see: https://material.io/design/typography/the-type-system.html#type-scale), and I'm not gonna sit around doing that by hand... Hence this simple function!
+					return ( value * 0.0625 ).toString() + 'rem';
+				},
+			},
+		},
 		'postcss-nested'          : {},
 		'postcss-nested-props'    : {},
 		'postcss-nested-ancestors': {},
