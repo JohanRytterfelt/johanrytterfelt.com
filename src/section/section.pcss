@@ -1,0 +1,70 @@
+/**
+ * Styling for section wrapepr module.
+ */
+
+
+
+/**
+ * Main BEM block.
+ */
+.section
+{
+	--sectionOffset: 100px;
+	position: relative;
+
+	&--backgroundGray,
+	&--backgroundWhite
+	{
+		&::before
+		{
+			bottom: 0;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: skewY( 2deg );
+			width: 100%;
+			z-index: -1;
+		}
+	}
+
+	&--backgroundGray
+	{
+		z-index: 2;
+
+		&::before
+		{
+			background: #f1f1f1;
+		}
+	}
+
+	&--backgroundWhite
+	{
+		z-index: 2;
+
+		&::before
+		{
+			background: #fff;
+		}
+	}
+
+	&--first
+	{
+		padding-bottom: var( --sectionOffset );
+	}
+
+	&--intermediary
+	{
+		padding-bottom: calc( 2 * var( --sectionOffset ) );
+	}
+
+	&--intermediary,
+	&--last
+	{
+		margin-top: calc( -1 * var( --sectionOffset ) );
+		padding-top: var( --sectionOffset );
+	}
+}

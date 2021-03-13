@@ -7,8 +7,9 @@
 /**
  * Imports.
  */
-import { FC }    from 'react';
-import BemHelper from 'react-bem-helper';
+import { FC }      from 'react';
+import { Section } from 'section/section';
+import BemHelper   from 'react-bem-helper';
 import './footer.pcss';
 
 
@@ -30,7 +31,7 @@ const bemHelper: BemHelper<string> = new BemHelper(
  */
 export const Footer: FC = () =>
 (
-	<div className={ bemHelper() }>
+	<Section className={ bemHelper() } position='last'>
 		{ 'TODO: Add footer here' }
-	</div>
+	</Section>
 );

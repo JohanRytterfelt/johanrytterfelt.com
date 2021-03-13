@@ -7,8 +7,9 @@
 /**
  * Imports.
  */
-import { FC }    from 'react';
-import BemHelper from 'react-bem-helper';
+import { FC }      from 'react';
+import { Section } from 'section/section';
+import BemHelper   from 'react-bem-helper';
 import './hero.pcss';
 
 
@@ -30,9 +31,9 @@ const bemHelper: BemHelper<string> = new BemHelper(
  */
 export const Hero: FC = () =>
 (
-	<div className={ bemHelper() }>
+	<Section className={ bemHelper() } position='first'>
 		<h1 className={ bemHelper( 'heading' ) }>
 			{ 'TODO: Add heading here' }
 		</h1>
-	</div>
+	</Section>
 );

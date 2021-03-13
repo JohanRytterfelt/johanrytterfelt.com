@@ -7,8 +7,9 @@
 /**
  * Imports.
  */
-import { FC }    from 'react';
-import BemHelper from 'react-bem-helper';
+import { FC }      from 'react';
+import { Section } from 'section/section';
+import BemHelper   from 'react-bem-helper';
 import './experience.pcss';
 
 
@@ -30,7 +31,7 @@ const bemHelper: BemHelper<string> = new BemHelper(
  */
 export const Experience: FC = () =>
 (
-	<div className={ bemHelper() }>
+	<Section background='white' className={ bemHelper() } position='intermediary'>
 		{ 'TODO: Add experience here' }
-	</div>
+	</Section>
 );
