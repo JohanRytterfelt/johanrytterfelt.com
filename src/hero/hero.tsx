@@ -35,5 +35,7 @@ export const Hero: FC = () =>
 		<h1 className={ bemHelper( 'heading' ) }>
 			{ 'TODO: Add heading here' }
 		</h1>
+		<div className={ bemHelper( 'portrait' ) } />
+		<div className={ bemHelper( 'portraitBackground' ) } />
 	</Section>
 );
