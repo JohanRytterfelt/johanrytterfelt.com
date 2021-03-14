@@ -14,8 +14,16 @@ const translations =
 		sv: 'Om mig',
 	},
 	{
-		en: 'Lorem2',
-		sv: 'Lorem2',
+		en: 'Skills',
+		sv: 'Kunskaper',
+	},
+	{
+		en: 'Experience',
+		sv: 'Arbetslivserfarenhet',
+	},
+	{
+		en: 'Portfolio',
+		sv: 'Portfolio',
 	},
 ] as const;
 
@@ -31,7 +39,7 @@ export type LanguagesType = keyof typeof translations[ number ];
 /**
  * Constants.
  */
-const defaultLangage: LanguagesType = 'sv';
+const defaultTranslationLangage = 'en' as const;
 
 
 
@@ -43,13 +51,13 @@ const defaultLangage: LanguagesType = 'sv';
  *
  * @returns Translated string.
  */
-export function translate( text: typeof translations[ number ][ 'sv' ], lang: LanguagesType ): string
+export function translate( textInEnglish: typeof translations[ number ][ typeof defaultTranslationLangage ], lang: LanguagesType ): string
 {
 	for ( const translationConfig in translations )
 	{
 		const translation = translations[ translationConfig ];
 
-		if ( translation[ defaultLangage ] === text )
+		if ( translation[ defaultTranslationLangage ] === textInEnglish )
 		{
 			return translation[ lang ];
 		}
