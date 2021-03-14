@@ -33,5 +33,9 @@ export const Footer: FC = () =>
 (
 	<Section className={ bemHelper() } position='last'>
 		{ 'TODO: Add footer here' }
+		<div className={ bemHelper( 'copyrightInfo' ) }>
+			&copy;
+			{ ' Copyright lolol' }
+		</div>
 	</Section>
 );
