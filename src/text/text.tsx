@@ -18,6 +18,7 @@ import './text.pcss';
  */
 type AboutPropsType =
 {
+	align?    : 'center'|'left'|'right';
 	children  : ReactNode;
 	className?: string;
 	color?    : 'dark'|'light';
@@ -47,6 +48,7 @@ const bemHelper: BemHelper<string> = new BemHelper(
  */
 export const Text: FC<AboutPropsType> = (
 	{
+		align     = 'left',
 		children,
 		color     = 'dark',
 		className,
