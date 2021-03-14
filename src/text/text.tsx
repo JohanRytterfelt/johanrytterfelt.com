@@ -20,6 +20,7 @@ type AboutPropsType =
 {
 	children  : ReactNode;
 	className?: string;
+	color?    : 'dark'|'light';
 	inline?   : boolean;
 	noMargins?: boolean;
 	// We base or sizes on MD typography. See: https://material.io/design/typography/the-type-system.html#type-scale for more info.
@@ -44,7 +45,16 @@ const bemHelper: BemHelper<string> = new BemHelper(
 /**
  * React component.
  */
-export const Text: FC<AboutPropsType> = ( { children, className, inline = false, noMargins = false, size = 'body1', tag = 'p' }: AboutPropsType ) =>
+export const Text: FC<AboutPropsType> = (
+	{
+		children,
+		color     = 'dark',
+		className,
+		inline    = false,
+		noMargins = false,
+		size      = 'body1',
+		tag       = 'p',
+	}: AboutPropsType ) =>
 {
 	return createElement(
 		tag,
@@ -54,9 +64,10 @@ export const Text: FC<AboutPropsType> = ( { children, className, inline = false,
 					extra    : className,
 					modifiers:
 					{
-						[ size ]: true,
-						inline  : inline,
-						margins : true !== noMargins,
+						[ color ]: true,
+						[ size ] : true,
+						inline   : inline,
+						margins  : true !== noMargins,
 					}
 				}
 			),
