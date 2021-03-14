@@ -7,9 +7,12 @@
 /**
  * Imports.
  */
-import { FC }      from 'react';
-import { Section } from 'section/section';
-import BemHelper   from 'react-bem-helper';
+import { AppContext }     from 'app/app';
+import { FC, useContext } from 'react';
+import { Section }        from 'section/section';
+import { Text }           from 'text/text';
+import { translate }      from 'translations/translations';
+import BemHelper          from 'react-bem-helper';
 import './experience.pcss';
 
 
@@ -30,8 +33,19 @@ const bemHelper: BemHelper<string> = new BemHelper(
  * React component.
  */
 export const Experience: FC = () =>
-(
-	<Section background='white' className={ bemHelper() } position='intermediary'>
-		{ 'TODO: Add experience here' }
-	</Section>
-);
+{
+	const { language } = useContext( AppContext );
+
+	return (
+		<Section background='white' className={ bemHelper() } position='intermediary'>
+			<Text size='h3' tag='h2'>
+				{
+					translate(
+						'Experience',
+						language
+					)
+				}
+			</Text>
+		</Section>
+	);
+};
