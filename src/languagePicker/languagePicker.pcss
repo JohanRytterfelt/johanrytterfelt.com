@@ -1,0 +1,32 @@
+/**
+ * Styling for the experience section.
+ */
+
+
+
+/**
+ * Main BEM block.
+ */
+.languagePicker
+{
+	display: flex;
+
+	&__button
+	{
+		& + &
+		{
+			margin-left: calc( 0.5 * var( --layoutGenericDistance ) );
+		}
+	}
+
+	&__flag
+	{
+		display: block;
+		width: 20px;
+	}
+
+	&__text
+	{
+		margin-top: calc( 0.3 * var( --layoutGenericDistance ) );
+	}
+}

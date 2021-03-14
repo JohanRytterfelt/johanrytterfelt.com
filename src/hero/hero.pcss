@@ -16,6 +16,7 @@
 	height: 300px;
 	justify-content: center;
 	overflow: hidden;
+	position: relative;
 
 	background:
 	{
@@ -30,6 +31,14 @@
 		position: relative;
 		text-align: center;
 		z-index: 4;
+	}
+
+	&__languagePicker
+	{
+		position: absolute;
+		right: var( --layoutGenericDistance );
+		top: var( --layoutGenericDistance );
+		z-index: 10;
 	}
 
 
