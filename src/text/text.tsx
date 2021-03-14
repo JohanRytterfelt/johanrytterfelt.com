@@ -19,6 +19,7 @@ import './text.pcss';
 type AboutPropsType =
 {
 	children  : ReactNode;
+	className?: string;
 	inline?   : boolean;
 	noMargins?: boolean;
 	// We base or sizes on MD typography. See: https://material.io/design/typography/the-type-system.html#type-scale for more info.
@@ -43,13 +44,14 @@ const bemHelper: BemHelper<string> = new BemHelper(
 /**
  * React component.
  */
-export const Text: FC<AboutPropsType> = ( { children, inline = false, noMargins = false, size = 'body1', tag = 'p' }: AboutPropsType ) =>
+export const Text: FC<AboutPropsType> = ( { children, className, inline = false, noMargins = false, size = 'body1', tag = 'p' }: AboutPropsType ) =>
 {
 	return createElement(
 		tag,
 		{
 			className: bemHelper(
 				{
+					extra    : className,
 					modifiers:
 					{
 						[ size ]: true,
