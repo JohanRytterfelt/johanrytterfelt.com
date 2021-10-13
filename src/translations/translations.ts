@@ -3,9 +3,24 @@
  */
 
 /**
+ * Type for language alternatives.
+ */
+export type LanguagesType = 'en'|'sv';
+
+/**
+ * Dedicated tarnslations type to enforce translations for all language alternatives.
+ */
+type TranslationsType = { 'en': string; 'sv': string; }[];
+
+/**
+ * Default translation language. What else is there to say?
+ */
+const defaultTranslationLangage: LanguagesType = 'en';
+
+/**
  * Complete translations list.
  */
-const translations =
+const translations: TranslationsType =
 [
 	{
 		en: 'About me',
@@ -27,17 +42,7 @@ const translations =
 		en: 'Web developer',
 		sv: 'Webbutvecklare',
 	}
-] as const;
-
-/**
- * Types utilizing const/readonly values.
- */
-export type LanguagesType = keyof typeof translations[ number ];
-
-/**
- * Default translation language. What else is there to say?
- */
-const defaultTranslationLangage = 'en' as const;
+];
 
 /**
  * Translates a given string.
