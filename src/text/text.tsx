@@ -1,20 +1,12 @@
 /**
  * Module for standardizing text nodes.
  */
-
-
-
-/**
- * Imports.
- */
 import { createElement, FC, ReactNode } from 'react';
 import BemHelper                        from 'react-bem-helper';
 import './text.pcss';
 
-
-
 /**
- * Types.
+ * React components props type.
  */
 type AboutPropsType =
 {
@@ -29,10 +21,8 @@ type AboutPropsType =
 	tag? : keyof HTMLElementTagNameMap;
 };
 
-
-
 /**
- * Constants.
+ * BEM helper class instance.
  */
 const bemHelper: BemHelper<string> = new BemHelper(
 	{
@@ -40,8 +30,6 @@ const bemHelper: BemHelper<string> = new BemHelper(
 		outputIsString: true,
 	}
 );
-
-
 
 /**
  * React component.

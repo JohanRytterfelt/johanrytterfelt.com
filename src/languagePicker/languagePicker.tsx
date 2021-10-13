@@ -1,12 +1,6 @@
 /**
  * Module for the skills section.
  */
-
-
-
-/**
- * Imports.
- */
 import { AppContext }         from 'app/app';
 import {
 	FC,
@@ -21,20 +15,16 @@ import { Text }               from 'text/text';
 import BemHelper              from 'react-bem-helper';
 import './languagePicker.pcss';
 
-
-
 /**
- * Types.
+ * Prop type for the React component.
  */
 type LanguagePickerPropsType =
 {
 	className?: string;
 };
 
-
-
 /**
- * Constants.
+ * BEM helper class instance.
  */
 const bemHelper: BemHelper<string> = new BemHelper(
 	{
@@ -42,8 +32,6 @@ const bemHelper: BemHelper<string> = new BemHelper(
 		outputIsString: true,
 	}
 );
-
-
 
 /**
  * React component.

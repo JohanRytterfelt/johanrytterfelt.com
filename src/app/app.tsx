@@ -1,12 +1,6 @@
 /**
  * Main app component.
  */
-
-
-
-/**
- * Imports.
- */
 import { About }         from 'about/about';
 import {
 	createContext,
@@ -23,10 +17,8 @@ import BemHelper         from 'react-bem-helper';
 import WebFont           from 'webfontloader';
 import './app.pcss';
 
-
-
 /**
- * Types.
+ * Type for the main app context.
  */
 type AppContextPropsType =
 {
@@ -34,10 +26,8 @@ type AppContextPropsType =
 	setLanguage: ( lang: LanguagesType ) => void;
 };
 
-
-
 /**
- * Constants.
+ * BEM helper class instance.
  */
 const bemHelper: BemHelper<string> = new BemHelper(
 	{
@@ -46,11 +36,6 @@ const bemHelper: BemHelper<string> = new BemHelper(
 	}
 );
 
-
-
-/**
- * Webfont setup.
- */
 WebFont.load(
 	{
 		google:
@@ -63,14 +48,10 @@ WebFont.load(
 	}
 );
 
-
-
 /**
- * Global context.
+ * Global app context.
  */
 export const AppContext = createContext<Partial<AppContextPropsType>>( {} );
-
-
 
 /**
  * React component.

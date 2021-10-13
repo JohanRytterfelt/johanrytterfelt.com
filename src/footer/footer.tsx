@@ -1,21 +1,13 @@
 /**
  * Module for the footer section.
  */
-
-
-
-/**
- * Imports.
- */
 import { FC }      from 'react';
 import { Section } from 'section/section';
 import BemHelper   from 'react-bem-helper';
 import './footer.pcss';
 
-
-
 /**
- * Constants.
+ * BEM helper class instance.
  */
 const bemHelper: BemHelper<string> = new BemHelper(
 	{
@@ -23,8 +15,6 @@ const bemHelper: BemHelper<string> = new BemHelper(
 		outputIsString: true,
 	}
 );
-
-
 
 /**
  * React component.

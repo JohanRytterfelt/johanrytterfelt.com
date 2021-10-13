@@ -1,12 +1,6 @@
 /**
  * Module for the hero image.
  */
-
-
-
-/**
- * Imports.
- */
 import { AppContext }     from 'app/app';
 import { FC, useContext } from 'react';
 import { LanguagePicker } from 'languagePicker/languagePicker';
@@ -16,10 +10,8 @@ import { translate }      from 'translations/translations';
 import BemHelper          from 'react-bem-helper';
 import './hero.pcss';
 
-
-
 /**
- * Constants.
+ * BEM helper class instance.
  */
 const bemHelper: BemHelper<string> = new BemHelper(
 	{
@@ -27,8 +19,6 @@ const bemHelper: BemHelper<string> = new BemHelper(
 		outputIsString: true,
 	}
 );
-
-
 
 /**
  * React component.

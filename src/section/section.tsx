@@ -1,21 +1,13 @@
 /**
  * Module for handling section layout.
  */
-
-
-
-/**
- * Imports.
- */
 import { capitalize }    from 'strings/strings';
 import { FC, ReactNode } from 'react';
 import BemHelper         from 'react-bem-helper';
 import './section.pcss';
 
-
-
 /**
- * Types.
+ * React component props type.
  */
 type SectionPropsType =
 {
@@ -25,10 +17,8 @@ type SectionPropsType =
 	position   : 'first'|'intermediary'|'last';
 };
 
-
-
 /**
- * Constants.
+ * BEM helper class instance.
  */
 const bemHelper: BemHelper<string> = new BemHelper(
 	{
@@ -36,8 +26,6 @@ const bemHelper: BemHelper<string> = new BemHelper(
 		outputIsString: true,
 	}
 );
-
-
 
 /**
  * React component.

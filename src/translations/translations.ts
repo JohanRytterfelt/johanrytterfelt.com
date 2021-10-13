@@ -2,10 +2,8 @@
  * Module for translations.
  */
 
-
-
 /**
- * Complete translations list..
+ * Complete translations list.
  */
 const translations =
 [
@@ -31,28 +29,20 @@ const translations =
 	}
 ] as const;
 
-
-
 /**
  * Types utilizing const/readonly values.
  */
 export type LanguagesType = keyof typeof translations[ number ];
 
-
-
 /**
- * Constants.
+ * Default translation language. What else is there to say?
  */
 const defaultTranslationLangage = 'en' as const;
 
-
-
 /**
  * Translates a given string.
- *
  * @param text Text to translate.
  * @param lang Language to translate into.
- *
  * @returns Translated string.
  */
 export function translate( textInEnglish: typeof translations[ number ][ typeof defaultTranslationLangage ], lang: LanguagesType ): string

@@ -1,12 +1,6 @@
 /**
  * Module for the about section.
  */
-
-
-
-/**
- * Imports.
- */
 import { AppContext }     from 'app/app';
 import { FC, useContext } from 'react';
 import { Section }        from 'section/section';
@@ -15,10 +9,8 @@ import { translate }      from 'translations/translations';
 import BemHelper          from 'react-bem-helper';
 import './about.pcss';
 
-
-
 /**
- * Constants.
+ * BEM helper class instance.
  */
 const bemHelper: BemHelper<string> = new BemHelper(
 	{
@@ -26,8 +18,6 @@ const bemHelper: BemHelper<string> = new BemHelper(
 		outputIsString: true,
 	}
 );
-
-
 
 /**
  * React component.
