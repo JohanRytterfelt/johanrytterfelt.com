@@ -25,6 +25,10 @@ const translations =
 		en: 'Portfolio',
 		sv: 'Portfolio',
 	},
+	{
+		en: 'Web developer',
+		sv: 'Webbutvecklare',
+	}
 ] as const;
 
 
