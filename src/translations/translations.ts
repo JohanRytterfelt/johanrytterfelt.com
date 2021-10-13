@@ -8,7 +8,7 @@
 export type LanguagesType = 'en'|'sv';
 
 /**
- * Dedicated tarnslations type to enforce translations for all language alternatives.
+ * Dedicated translations type to enforce translations for all language alternatives.
  */
 type TranslationsType = { 'en': string; 'sv': string; }[];
 
